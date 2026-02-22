@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+ 
+
+}
+
+.button-group {
+    border-bottom: 1px solid black;
+}
+
+aside {
+    width: 240px;
+}
+
+
