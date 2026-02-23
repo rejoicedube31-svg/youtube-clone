@@ -17,6 +17,15 @@ nav {
 
 aside {
     width: 240px;
+    height: 100%;
+    float: left;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
 }
 
 
