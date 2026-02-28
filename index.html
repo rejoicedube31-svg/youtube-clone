@@ -4,38 +4,37 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <title>Youtube Clone</title>
     </head>
     <body>
 
         <nav>
-            <section>
-                <!--menu icon-->
-                <img src="" alt="Menu">
-                <!--logo-->
+            <section class="logo">
+                <i class="material-icons">view_headline</i>
                 <img src="https://www.vectorlogo.zone/logos/youtube/youtube-ar21.svg" alt="logo">
             </section>
             
             <!--search bar-->
             <div id="searchbar">
                 <input type="search" id="search" placeholder="search">
-                <button><!--search icon--></button>
+                <button><i class="material-icons">search</i></button>
 
                 <!--voice search button-->
-                <button><!--voice search icon--></button>
+                <button><i class="material-icons">keyboard_voice</i></button>
             </div>
             
-            <section>
+            <section class="nav-icons">
 
                 <!--create button-->
 
-                <button><!--voice search icon--></button>
+                <button id="create"><i class="material-icons">add</i><p>create</p></button>
 
                 <!--notification icon-->
-                <img src="" alt="Noty">
+                <i class="material-icons">notifications</i>
 
                 <!--profile icon-->
-                <img src="" alt="Profile">
+                <i class="material-icons">account_circle</i>
 
             </section>
         </nav>
@@ -43,8 +42,16 @@
         <aside>
 
             <section class="button-group">
-                <!--Home-->
-                <!--Shorts-->
+                <span>
+                    <i class="material-icons">home</i>
+                    Home
+                </span>
+
+                <span>
+                    <i class="material-icons">play_circle_outline</i>
+                    Shorts
+                </span>
+                
             </section>
 
             <section class="button-group">
@@ -52,13 +59,13 @@
 
                 <div class="button">
                     <!--icon-->
-                    <img src="" alt="Home">
+                    <img id="sia" src="https://yt3.googleusercontent.com/AI1Y-Z_HVxIvVOhxhON46eKWUcKjRrhrK7OVrnfPM-5uq3lihpxtf6CvuJr_lklsIuER65jMAQ=s160-c-k-c0x00ffffff-no-rj" alt="Home">
                     Sia
                 </div>
 
                 <div class="button">
                     <!--icon-->
-                    <img src="" alt="Home">
+                    <img id="nhlalo" src="https://yt3.ggpht.com/W3fxaKuGTXfnIkaLQ8Cq3x6CK-rUX7DmjS_R97D0eNceV7czVB1xHey3zqUpIC7cYmPTMLDSKA=s88-c-k-c0x00ffffff-no-rj" alt="Home">
                     Nhlalo Studios
                 </div>
 
@@ -69,26 +76,38 @@
 
                 <div class="button">
                     <!--icon-->
-                    <img src="" alt="Home">
-                    History
+                    <span> 
+                        <i class="material-icons">history</i>
+                        History
+                    </span>
+                        
                 </div>
 
                 <div class="button">
                     <!--icon-->
-                    <img src="" alt="Home">
-                    Playlists
+                    
+                    <span>
+                        <i class="material-icons">playlist_play</i>
+                        Playlists
+                    </span>
+                    
                 </div>
 
                 <div class="button">
                     <!--icon-->
-                    <img src="" alt="Home">
-                    Watch Later
+                    <span>
+                        <i class="material-icons">watch_later</i>
+                        Watch Later
+                    </span>
+                    
                 </div>
 
                 <div class="button">
                     <!--icon-->
-                    <img src="" alt="Home">
-                    Liked videos
+                    <span>
+                        <i class="material-icons">thumb_up</i>
+                        Liked videos
+                    </span>
                 </div>
 
                 <div class="button">

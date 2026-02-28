@@ -2,17 +2,52 @@ body {
     margin: 0;
 }
 
+/* nav */
+
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
- 
+}
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#create {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    border-radius: 50px;
+    height: 50%;
+}
+
+#sia {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+#nhlalo {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
 }
 
 .button-group {
     border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 aside {
