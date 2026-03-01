@@ -85,6 +85,23 @@ height: 32px;
     cursor: pointer;
 }
 
+/* start of custom feature without cursor */
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 50px;
+}
+
+.login input, button {
+    padding: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+/* end of custom feature without cursor */
+
 .navigation-icons {
     display: flex;
     align-items: center;
@@ -291,4 +308,57 @@ p {
     font-size: 10px;
     font-weight: 500;
     color: #606060;
+}
+
+/*Hover effects for videos using cursor*/
+
+.video {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.video .thumbnail img {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.video:hover {
+  transform: translateY(-4px);
+}
+
+.video:hover .thumbnail img {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/*medium screens: shrink sidebar, hide text labels using cursor*/
+
+@media (max-width: 900px) {
+  .categories {
+    width: 72px;
+    padding-right: 0;
+  }
+
+  .category,
+  .youtube-category,
+  .sub {
+    padding: 0 12px;
+  }
+
+  .category span,
+  .youtube-category span,
+  .sub span,
+  .category_heading,
+  .subscriptions .header,
+  .categories-footer {
+    display: none;
+  }
+
+  .category i,
+  .material-icons {
+    margin-right: 0;
+  }
+
+  .videos {
+    width: auto;
+    flex: 1;
+  }
 }
