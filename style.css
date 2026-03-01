@@ -8,6 +8,12 @@
     box-sizing: border-box;
 }
 
+@media (min-width: 768px) {
+  * {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 body {font-family: "Roboto", sans-serif;}
 
 /* navbar */
@@ -28,11 +34,13 @@ body {font-family: "Roboto", sans-serif;}
     display: flex;
     align-items: center;
     margin-left: 8px;
+    cursor: pointer;
 }
 
 .logo img {
     width: 100px;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .navbar .searchbar {
@@ -47,12 +55,19 @@ height: 32px;
     width: 600px;
     margin-right: 10px;
     height: 100%;
+    border-radius: 10px;
+}
+
+.search i {
+    padding-left: 20px;
 }
 
 .search input {
     border: none;
     width: 90%;
     padding-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .search button {
@@ -61,15 +76,20 @@ height: 32px;
     width: 10%;
     display: flex;
     align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.search button i {
+.search button i, #voice-input {
     margin : 0;
+    cursor: pointer;
 }
 
 .navigation-icons {
     display: flex;
     align-items: center;
+    cursor: pointer;
+    gap: 24px;
 }
 
 #create-btn {
@@ -77,7 +97,7 @@ height: 32px;
     align-items: center;
     color: #606060;
     cursor: pointer;
-    gap: 10px;
+    gap: 5px;
 }
 
 .material-icons {
@@ -98,6 +118,11 @@ height: 32px;
     height: 100%;
     background: white;
     overflow-y: scroll;
+    padding-right: 20px;
+}
+
+p {
+    cursor: pointer;
 }
 
 .category-section{
@@ -145,7 +170,7 @@ height: 32px;
 }
 
 #youtube-music {
-    width: 24px;
+    width: 30px;
     height: 24px;
 }
 
