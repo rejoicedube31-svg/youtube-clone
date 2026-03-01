@@ -139,6 +139,32 @@ height: 32px;
     
 }
 
+#youtube-premium {
+    width: 35px;
+    height: 30px;
+}
+
+#youtube-music {
+    width: 24px;
+    height: 24px;
+}
+
+#youtube-kids {
+    width: 24px;
+    height: 24px;
+}
+
+.youtube-category {
+    display: flex;
+    width: 260px;
+    align-items: center;
+    gap: 24px;
+    margin-top: 10px;
+    padding: 0 24px;
+    cursor: pointer;
+}
+
+
 .category_heading {
     margin: 10px 0px 10px 25px;
     color: #606060;
