@@ -1,613 +1,858 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <title>Youtube Clone</title>
-    </head>
-    <body>
-
-        <nav>
-            <section class="logo">
-                <i class="material-icons">view_headline</i>
-                <img src="https://www.vectorlogo.zone/logos/youtube/youtube-ar21.svg" alt="logo">
-            </section>
-            
-            <!--search bar-->
-            <div id="searchbar">
-                <input type="search" id="search" placeholder="search">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>YouTube</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <i class="material-icons">view_headline</i>
+            <img src="https://www.vectorlogo.zone/logos/youtube/youtube-ar21.svg" alt="YouTube Logo">
+        </div>
+        <div class="searchbar">
+            <form class="search">
+                <input type="text" placeholder="search">
                 <button><i class="material-icons">search</i></button>
+            </form>
+            <i class="material-icons">keyboard_voice</i>
+        </div>
 
-                <!--voice search button-->
-                <button><i class="material-icons">keyboard_voice</i></button>
-            </div>
-            
-            <section class="nav-icons">
 
-                <!--create button-->
+        <div class="navigation-icons">
+            <span id="create-btn"><i class="material-icons">add</i>Create</span>
+            <i class="material-icons">notifications</i>
+            <i class="material-icons">account_circle</i>
+        </div>
 
-                <button id="create"><i class="material-icons">add</i><p>create</p></button>
-
-                <!--notification icon-->
-                <i class="material-icons">notifications</i>
-
-                <!--profile icon-->
-                <i class="material-icons">account_circle</i>
-
-            </section>
-        </nav>
-
-        <aside>
-
-            <section class="button-group">
-                <span>
+    </div>
+    <div class="mainbody">
+        <div class="categories">
+            <div class="category-section">
+                <span class="category">
                     <i class="material-icons">home</i>
                     Home
                 </span>
-
-                <span>
-                    <i class="material-icons">play_circle_outline</i>
+                <span class="category">
+                    <i class="material-icons">video_library</i>
                     Shorts
                 </span>
-                
-            </section>
 
-            <section class="button-group">
-                <h2>Subscriptions ></h2>
 
-                <div class="button">
-                    <!--icon-->
-                    <img id="sia" src="https://yt3.googleusercontent.com/AI1Y-Z_HVxIvVOhxhON46eKWUcKjRrhrK7OVrnfPM-5uq3lihpxtf6CvuJr_lklsIuER65jMAQ=s160-c-k-c0x00ffffff-no-rj" alt="Home">
+            </div>
+
+            <div class="subscriptions">
+                <span class="header">
+                    Subscriptions   >
+                </span>
+
+                <span class="sub"><img id="profile-icon" src="https://yt3.googleusercontent.com/AI1Y-Z_HVxIvVOhxhON46eKWUcKjRrhrK7OVrnfPM-5uq3lihpxtf6CvuJr_lklsIuER65jMAQ=s160-c-k-c0x00ffffff-no-rj" alt="">
                     Sia
-                </div>
+                </span>
 
-                <div class="button">
-                    <!--icon-->
-                    <img id="nhlalo" src="https://yt3.ggpht.com/W3fxaKuGTXfnIkaLQ8Cq3x6CK-rUX7DmjS_R97D0eNceV7czVB1xHey3zqUpIC7cYmPTMLDSKA=s88-c-k-c0x00ffffff-no-rj" alt="Home">
+                <span class="sub"><img id="profile-icon" src="https://yt3.googleusercontent.com/W3fxaKuGTXfnIkaLQ8Cq3x6CK-rUX7DmjS_R97D0eNceV7czVB1xHey3zqUpIC7cYmPTMLDSKA=s160-c-k-c0x00ffffff-no-rj" alt="">
                     Nhlalo Studios
-                </div>
+                </span>
 
-            </section>
+            </div>
 
-            <section class="button-group">
-                <h2>You ></h2>
-
-                <div class="button">
-                    <!--icon-->
-                    <span> 
-                        <i class="material-icons">history</i>
-                        History
-                    </span>
-                        
-                </div>
-
-                <div class="button">
-                    <!--icon-->
-                    
-                    <span>
-                        <i class="material-icons">playlist_play</i>
-                        Playlists
-                    </span>
-                    
-                </div>
-
-                <div class="button">
-                    <!--icon-->
-                    <span>
-                        <i class="material-icons">watch_later</i>
-                        Watch Later
-                    </span>
-                    
-                </div>
-
-                <div class="button">
-                    <!--icon-->
-                    <span>
-                        <i class="material-icons">thumb_up</i>
-                        Liked videos
-                    </span>
-                </div>
-
-                <div class="button">
-                    <!--icon-->
-                    <img src="" alt="Home">
-                    Downloads
-                </div>
-
-            </section>
-
-            <section class="button-group">
-                <h2>Explore</h2>
-
-                <div class="button">
-                    <!--icon-->
-                    <img src="" alt="Home">
-                    Music
-                </div>
-
-                <div class="button">
-                    <!--icon-->
-                    <img src="" alt="Home">
-                    Gaming
-                </div>
-
-                <div class="button">
-                    <!--icon-->
-                    <img src="" alt="Home">
-                    News
-                </div>
-
-                <div class="button">
-                    <!--icon-->
-                    <img src="" alt="Home">
+            <div class="category-section">
+                 <span class="category">
+                    <i class="material-icons">video_library</i>
+                    Library
+                </span>
+                <span class="category">
+                    <i class="material-icons">history</i>
+                    History
+                </span>
+                <span class="category">
+                    <i class="material-icons">slideshow</i>
+                    Your videos
+                </span>
+                <span class="category">
+                    <i class="material-icons">watch_later</i>
+                    Watch later
+                </span>
+                <span class="category">
+                    <i class="material-icons">expand_more</i>
                     Show more
-                </div>
+                </span>
+            </div>
 
-            </section>
-
-            <section class="button-group">
-                <h2>More from YouTube</h2>
-
-                <div class="button">
-                    <!--icon-->
-                    <img src="" alt="Home">
-                    YouTube Premium
-                </div>
-
-                <div class="button">
-                    <!--icon-->
-                    <img src="" alt="Home">
-                    YouTube Music
-                </div>
-
-                <div class="button">
-                    <!--icon-->
-                    <img src="" alt="Home">
-                    YoutTube Kids
-                </div>
-
-            </section>
-
-            <section class="button-group">
-
-                <div class="button">
-                    <!--icon-->
-                    <img src="" alt="Home">
+            <div class="category-section">
+                <P class="category_heading">SUBSCRIPTIONS</P>
+                 <span class="category">
+                    <i class="material-icons">account_circle</i>
+                    Rejoice
+                </span>
+                <span class="category">
+                    <i class="material-icons">settings</i>
                     Settings
-                </div>
-
-                <div class="button">
-                    <!--icon-->
-                    <img src="" alt="Home">
-                    Report history
-                </div>
-
-                <div class="button">
-                    <!--icon-->
-                    <img src="" alt="Home">
+                </span>
+                <span class="category">
+                    <i class="material-icons">history</i>
+                    Report History
+                </span>
+                <span class="category">
+                    <i class="material-icons">help</i>
                     Help
+                </span>
+                </span>
+                <span class="category">
+                    <i class="material-icons">feedback</i>
+                    Send Feedback
+                </span>
+            </div>
+
+            <div class="categories-footer">
+                <div class="footer-section">
+                <span>About</span>
+                <span>Press</span>
+                <span>Copyright</span>
+                <span>Contact Us</span>
+                <span>Creator</span>
+                <span>Advertise</span>
+                <span>Developers</span>
+            </div>
+            <div class="footer-section">
+                <span>Terms</span>
+                <span>Privacy</span>
+                <span>Policy & Safety</span>
+                <span>How YouTube works</span>
+                <span>Test new features</span>
+            </div>
+            <span class="copyright">© 2026 Zaio YouTube Clone</span>
+         </div>
+        </div>
+
+        <div class="videos">
+            <div class="video-grid">
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                    </div>
+                        <div class="details">
+                            <div class="profile">
+                              <img src="https://yt3.ggpht.com/VMAM-45YSgbP9OkpAg7b5V5kO3yMUuaTMoAO5HPVLR5T5vhv87Qj2N6KI91t_lYN1CpUrGX3l0w=s68-c-k-c0x00ffffff-no-rj" alt="">  
+                            </div>
+                             <div class="video-details">
+                                <p>AI Video Clip Generator</p>
+                                <div class="posted-by">
+                                    <span>FORMULA 1</span>
+                                    <div class="views-date">
+                                        <span>37K Views</span>
+                                        <span>.</span>
+                                        <span>1 month ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                </div>
+                <div class="video">
+                        <div class="thumbnail">
+                            <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                        </div>
+                            <div class="details">
+                                <div class="profile">
+                                <img src="https://yt3.ggpht.com/AZRufJDRrjbq3bX6KZrI8Rf6fr0_e2-knJVXYkegDLf_ZzGP8zi9mdPHfJ23ukxbtnCwVovSuA=s68-c-k-c0x00ffffff-no-rj" alt="">  
+                                </div>
+                                <div class="video-details">
+                                    <p>AI Video Clip Generator</p>
+                                    <div class="posted-by">
+                                        <span>FORMULA 1</span>
+                                        <div class="views-date">
+                                            <span>37K Views</span>
+                                            <span>.</span>
+                                            <span>1 month ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                </div>
+                <div class="video">
+                        <div class="thumbnail">
+                            <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                        </div>
+                            <div class="details">
+                                <div class="profile">
+                                <img src="https://yt3.ggpht.com/5f0JkeFR5gBoe6ljIz-8hptPOEHB0GJeKccDeEl5EvskSoUs83IC4ZIVXJ8lkZ0mq-GThDhYpw=s68-c-k-c0x00ffffff-no-rj" alt="">  
+                                </div>
+                                <div class="video-details">
+                                    <p>AI Video Clip Generator</p>
+                                    <div class="posted-by">
+                                        <span>FORMULA 1</span>
+                                        <div class="views-date">
+                                            <span>37K Views</span>
+                                            <span>.</span>
+                                            <span>1 month ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                </div>
+                <div class="video">
+                        <div class="thumbnail">
+                            <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                        </div>
+                            <div class="details">
+                                <div class="profile">
+                                <img src="https://yt3.ggpht.com/ytc/AIdro_kLcNWGhI1t0Jc0lhfBj6jpEjXcni33pFiwbEOPjbsTQek=s68-c-k-c0x00ffffff-no-rj" alt=""> 
+                                </div>
+                                <div class="video-details">
+                                    <p>AI Video Clip Generator</p>
+                                    <div class="posted-by">
+                                        <span>FORMULA 1</span>
+                                        <div class="views-date">
+                                            <span>37K Views</span>
+                                            <span>.</span>
+                                            <span>1 month ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                    
+                            
+                            </div>
+
+                </div>
+                 <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                    </div>
+                        <div class="details">
+                            <div class="profile">
+                              <img src="https://yt3.ggpht.com/VMAM-45YSgbP9OkpAg7b5V5kO3yMUuaTMoAO5HPVLR5T5vhv87Qj2N6KI91t_lYN1CpUrGX3l0w=s68-c-k-c0x00ffffff-no-rj" alt="">  
+                            </div>
+                             <div class="video-details">
+                                <p>AI Video Clip Generator</p>
+                                <div class="posted-by">
+                                    <span>FORMULA 1</span>
+                                    <div class="views-date">
+                                        <span>37K Views</span>
+                                        <span>.</span>
+                                        <span>1 month ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                </div>
+                <div class="video">
+                        <div class="thumbnail">
+                            <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                        </div>
+                            <div class="details">
+                                <div class="profile">
+                                <img src="https://yt3.ggpht.com/AZRufJDRrjbq3bX6KZrI8Rf6fr0_e2-knJVXYkegDLf_ZzGP8zi9mdPHfJ23ukxbtnCwVovSuA=s68-c-k-c0x00ffffff-no-rj" alt="">  
+                                </div>
+                                <div class="video-details">
+                                    <p>AI Video Clip Generator</p>
+                                    <div class="posted-by">
+                                        <span>FORMULA 1</span>
+                                        <div class="views-date">
+                                            <span>37K Views</span>
+                                            <span>.</span>
+                                            <span>1 month ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                </div>
+                <div class="video">
+                        <div class="thumbnail">
+                            <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                        </div>
+                            <div class="details">
+                                <div class="profile">
+                                <img src="https://yt3.ggpht.com/5f0JkeFR5gBoe6ljIz-8hptPOEHB0GJeKccDeEl5EvskSoUs83IC4ZIVXJ8lkZ0mq-GThDhYpw=s68-c-k-c0x00ffffff-no-rj" alt="">  
+                                </div>
+                                <div class="video-details">
+                                    <p>AI Video Clip Generator</p>
+                                    <div class="posted-by">
+                                        <span>FORMULA 1</span>
+                                        <div class="views-date">
+                                            <span>37K Views</span>
+                                            <span>.</span>
+                                            <span>1 month ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                </div>
+                <div class="video">
+                        <div class="thumbnail">
+                            <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                        </div>
+                            <div class="details">
+                                <div class="profile">
+                                <img src="https://yt3.ggpht.com/ytc/AIdro_kLcNWGhI1t0Jc0lhfBj6jpEjXcni33pFiwbEOPjbsTQek=s68-c-k-c0x00ffffff-no-rj" alt=""> 
+                                </div>
+                                <div class="video-details">
+                                    <p>AI Video Clip Generator</p>
+                                    <div class="posted-by">
+                                        <span>FORMULA 1</span>
+                                        <div class="views-date">
+                                            <span>37K Views</span>
+                                            <span>.</span>
+                                            <span>1 month ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                    
+                            
+                            </div>
+
+                </div>
+                 <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                    </div>
+                        <div class="details">
+                            <div class="profile">
+                              <img src="https://yt3.ggpht.com/VMAM-45YSgbP9OkpAg7b5V5kO3yMUuaTMoAO5HPVLR5T5vhv87Qj2N6KI91t_lYN1CpUrGX3l0w=s68-c-k-c0x00ffffff-no-rj" alt="">  
+                            </div>
+                             <div class="video-details">
+                                <p>AI Video Clip Generator</p>
+                                <div class="posted-by">
+                                    <span>FORMULA 1</span>
+                                    <div class="views-date">
+                                        <span>37K Views</span>
+                                        <span>.</span>
+                                        <span>1 month ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                </div>
+                <div class="video">
+                        <div class="thumbnail">
+                            <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                        </div>
+                            <div class="details">
+                                <div class="profile">
+                                <img src="https://yt3.ggpht.com/AZRufJDRrjbq3bX6KZrI8Rf6fr0_e2-knJVXYkegDLf_ZzGP8zi9mdPHfJ23ukxbtnCwVovSuA=s68-c-k-c0x00ffffff-no-rj" alt="">  
+                                </div>
+                                <div class="video-details">
+                                    <p>AI Video Clip Generator</p>
+                                    <div class="posted-by">
+                                        <span>FORMULA 1</span>
+                                        <div class="views-date">
+                                            <span>37K Views</span>
+                                            <span>.</span>
+                                            <span>1 month ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                </div>
+                <div class="video">
+                        <div class="thumbnail">
+                            <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                        </div>
+                            <div class="details">
+                                <div class="profile">
+                                <img src="https://yt3.ggpht.com/5f0JkeFR5gBoe6ljIz-8hptPOEHB0GJeKccDeEl5EvskSoUs83IC4ZIVXJ8lkZ0mq-GThDhYpw=s68-c-k-c0x00ffffff-no-rj" alt="">  
+                                </div>
+                                <div class="video-details">
+                                    <p>AI Video Clip Generator</p>
+                                    <div class="posted-by">
+                                        <span>FORMULA 1</span>
+                                        <div class="views-date">
+                                            <span>37K Views</span>
+                                            <span>.</span>
+                                            <span>1 month ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                </div>
+                <div class="video">
+                        <div class="thumbnail">
+                            <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                        </div>
+                            <div class="details">
+                                <div class="profile">
+                                <img src="https://yt3.ggpht.com/ytc/AIdro_kLcNWGhI1t0Jc0lhfBj6jpEjXcni33pFiwbEOPjbsTQek=s68-c-k-c0x00ffffff-no-rj" alt=""> 
+                                </div>
+                                <div class="video-details">
+                                    <p>AI Video Clip Generator</p>
+                                    <div class="posted-by">
+                                        <span>FORMULA 1</span>
+                                        <div class="views-date">
+                                            <span>37K Views</span>
+                                            <span>.</span>
+                                            <span>1 month ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                    
+                            
+                            </div>
+
+                </div>
+                 <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                    </div>
+                        <div class="details">
+                            <div class="profile">
+                              <img src="https://yt3.ggpht.com/VMAM-45YSgbP9OkpAg7b5V5kO3yMUuaTMoAO5HPVLR5T5vhv87Qj2N6KI91t_lYN1CpUrGX3l0w=s68-c-k-c0x00ffffff-no-rj" alt="">  
+                            </div>
+                             <div class="video-details">
+                                <p>AI Video Clip Generator</p>
+                                <div class="posted-by">
+                                    <span>FORMULA 1</span>
+                                    <div class="views-date">
+                                        <span>37K Views</span>
+                                        <span>.</span>
+                                        <span>1 month ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                </div>
+                <div class="video">
+                        <div class="thumbnail">
+                            <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                        </div>
+                            <div class="details">
+                                <div class="profile">
+                                <img src="https://yt3.ggpht.com/AZRufJDRrjbq3bX6KZrI8Rf6fr0_e2-knJVXYkegDLf_ZzGP8zi9mdPHfJ23ukxbtnCwVovSuA=s68-c-k-c0x00ffffff-no-rj" alt="">  
+                                </div>
+                                <div class="video-details">
+                                    <p>AI Video Clip Generator</p>
+                                    <div class="posted-by">
+                                        <span>FORMULA 1</span>
+                                        <div class="views-date">
+                                            <span>37K Views</span>
+                                            <span>.</span>
+                                            <span>1 month ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                </div>
+                <div class="video">
+                        <div class="thumbnail">
+                            <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                        </div>
+                            <div class="details">
+                                <div class="profile">
+                                <img src="https://yt3.ggpht.com/5f0JkeFR5gBoe6ljIz-8hptPOEHB0GJeKccDeEl5EvskSoUs83IC4ZIVXJ8lkZ0mq-GThDhYpw=s68-c-k-c0x00ffffff-no-rj" alt="">  
+                                </div>
+                                <div class="video-details">
+                                    <p>AI Video Clip Generator</p>
+                                    <div class="posted-by">
+                                        <span>FORMULA 1</span>
+                                        <div class="views-date">
+                                            <span>37K Views</span>
+                                            <span>.</span>
+                                            <span>1 month ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                </div>
+                <div class="video">
+                        <div class="thumbnail">
+                            <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                        </div>
+                            <div class="details">
+                                <div class="profile">
+                                <img src="https://yt3.ggpht.com/ytc/AIdro_kLcNWGhI1t0Jc0lhfBj6jpEjXcni33pFiwbEOPjbsTQek=s68-c-k-c0x00ffffff-no-rj" alt=""> 
+                                </div>
+                                <div class="video-details">
+                                    <p>AI Video Clip Generator</p>
+                                    <div class="posted-by">
+                                        <span>FORMULA 1</span>
+                                        <div class="views-date">
+                                            <span>37K Views</span>
+                                            <span>.</span>
+                                            <span>1 month ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                    
+                            
+                            </div>
+
+                </div>
+                 <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                    </div>
+                        <div class="details">
+                            <div class="profile">
+                              <img src="https://yt3.ggpht.com/VMAM-45YSgbP9OkpAg7b5V5kO3yMUuaTMoAO5HPVLR5T5vhv87Qj2N6KI91t_lYN1CpUrGX3l0w=s68-c-k-c0x00ffffff-no-rj" alt="">  
+                            </div>
+                             <div class="video-details">
+                                <p>AI Video Clip Generator</p>
+                                <div class="posted-by">
+                                    <span>FORMULA 1</span>
+                                    <div class="views-date">
+                                        <span>37K Views</span>
+                                        <span>.</span>
+                                        <span>1 month ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                </div>
+                <div class="video">
+                        <div class="thumbnail">
+                            <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                        </div>
+                            <div class="details">
+                                <div class="profile">
+                                <img src="https://yt3.ggpht.com/AZRufJDRrjbq3bX6KZrI8Rf6fr0_e2-knJVXYkegDLf_ZzGP8zi9mdPHfJ23ukxbtnCwVovSuA=s68-c-k-c0x00ffffff-no-rj" alt="">  
+                                </div>
+                                <div class="video-details">
+                                    <p>AI Video Clip Generator</p>
+                                    <div class="posted-by">
+                                        <span>FORMULA 1</span>
+                                        <div class="views-date">
+                                            <span>37K Views</span>
+                                            <span>.</span>
+                                            <span>1 month ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                </div>
+                <div class="video">
+                        <div class="thumbnail">
+                            <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                        </div>
+                            <div class="details">
+                                <div class="profile">
+                                <img src="https://yt3.ggpht.com/5f0JkeFR5gBoe6ljIz-8hptPOEHB0GJeKccDeEl5EvskSoUs83IC4ZIVXJ8lkZ0mq-GThDhYpw=s68-c-k-c0x00ffffff-no-rj" alt="">  
+                                </div>
+                                <div class="video-details">
+                                    <p>AI Video Clip Generator</p>
+                                    <div class="posted-by">
+                                        <span>FORMULA 1</span>
+                                        <div class="views-date">
+                                            <span>37K Views</span>
+                                            <span>.</span>
+                                            <span>1 month ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                </div>
+                <div class="video">
+                        <div class="thumbnail">
+                            <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                        </div>
+                            <div class="details">
+                                <div class="profile">
+                                <img src="https://yt3.ggpht.com/ytc/AIdro_kLcNWGhI1t0Jc0lhfBj6jpEjXcni33pFiwbEOPjbsTQek=s68-c-k-c0x00ffffff-no-rj" alt=""> 
+                                </div>
+                                <div class="video-details">
+                                    <p>AI Video Clip Generator</p>
+                                    <div class="posted-by">
+                                        <span>FORMULA 1</span>
+                                        <div class="views-date">
+                                            <span>37K Views</span>
+                                            <span>.</span>
+                                            <span>1 month ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                    
+                            
+                            </div>
+
+                </div>
+                 <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                    </div>
+                        <div class="details">
+                            <div class="profile">
+                              <img src="https://yt3.ggpht.com/VMAM-45YSgbP9OkpAg7b5V5kO3yMUuaTMoAO5HPVLR5T5vhv87Qj2N6KI91t_lYN1CpUrGX3l0w=s68-c-k-c0x00ffffff-no-rj" alt="">  
+                            </div>
+                             <div class="video-details">
+                                <p>AI Video Clip Generator</p>
+                                <div class="posted-by">
+                                    <span>FORMULA 1</span>
+                                    <div class="views-date">
+                                        <span>37K Views</span>
+                                        <span>.</span>
+                                        <span>1 month ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                </div>
+                <div class="video">
+                        <div class="thumbnail">
+                            <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                        </div>
+                            <div class="details">
+                                <div class="profile">
+                                <img src="https://yt3.ggpht.com/AZRufJDRrjbq3bX6KZrI8Rf6fr0_e2-knJVXYkegDLf_ZzGP8zi9mdPHfJ23ukxbtnCwVovSuA=s68-c-k-c0x00ffffff-no-rj" alt="">  
+                                </div>
+                                <div class="video-details">
+                                    <p>AI Video Clip Generator</p>
+                                    <div class="posted-by">
+                                        <span>FORMULA 1</span>
+                                        <div class="views-date">
+                                            <span>37K Views</span>
+                                            <span>.</span>
+                                            <span>1 month ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                </div>
+                <div class="video">
+                        <div class="thumbnail">
+                            <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                        </div>
+                            <div class="details">
+                                <div class="profile">
+                                <img src="https://yt3.ggpht.com/5f0JkeFR5gBoe6ljIz-8hptPOEHB0GJeKccDeEl5EvskSoUs83IC4ZIVXJ8lkZ0mq-GThDhYpw=s68-c-k-c0x00ffffff-no-rj" alt="">  
+                                </div>
+                                <div class="video-details">
+                                    <p>AI Video Clip Generator</p>
+                                    <div class="posted-by">
+                                        <span>FORMULA 1</span>
+                                        <div class="views-date">
+                                            <span>37K Views</span>
+                                            <span>.</span>
+                                            <span>1 month ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                </div>
+                <div class="video">
+                        <div class="thumbnail">
+                            <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                        </div>
+                            <div class="details">
+                                <div class="profile">
+                                <img src="https://yt3.ggpht.com/ytc/AIdro_kLcNWGhI1t0Jc0lhfBj6jpEjXcni33pFiwbEOPjbsTQek=s68-c-k-c0x00ffffff-no-rj" alt=""> 
+                                </div>
+                                <div class="video-details">
+                                    <p>AI Video Clip Generator</p>
+                                    <div class="posted-by">
+                                        <span>FORMULA 1</span>
+                                        <div class="views-date">
+                                            <span>37K Views</span>
+                                            <span>.</span>
+                                            <span>1 month ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                    
+                            
+                            </div>
+
+                </div>
+                 <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                    </div>
+                        <div class="details">
+                            <div class="profile">
+                              <img src="https://yt3.ggpht.com/VMAM-45YSgbP9OkpAg7b5V5kO3yMUuaTMoAO5HPVLR5T5vhv87Qj2N6KI91t_lYN1CpUrGX3l0w=s68-c-k-c0x00ffffff-no-rj" alt="">  
+                            </div>
+                             <div class="video-details">
+                                <p>AI Video Clip Generator</p>
+                                <div class="posted-by">
+                                    <span>FORMULA 1</span>
+                                    <div class="views-date">
+                                        <span>37K Views</span>
+                                        <span>.</span>
+                                        <span>1 month ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                </div>
+                <div class="video">
+                        <div class="thumbnail">
+                            <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                        </div>
+                            <div class="details">
+                                <div class="profile">
+                                <img src="https://yt3.ggpht.com/AZRufJDRrjbq3bX6KZrI8Rf6fr0_e2-knJVXYkegDLf_ZzGP8zi9mdPHfJ23ukxbtnCwVovSuA=s68-c-k-c0x00ffffff-no-rj" alt="">  
+                                </div>
+                                <div class="video-details">
+                                    <p>AI Video Clip Generator</p>
+                                    <div class="posted-by">
+                                        <span>FORMULA 1</span>
+                                        <div class="views-date">
+                                            <span>37K Views</span>
+                                            <span>.</span>
+                                            <span>1 month ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                </div>
+                <div class="video">
+                        <div class="thumbnail">
+                            <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                        </div>
+                            <div class="details">
+                                <div class="profile">
+                                <img src="https://yt3.ggpht.com/5f0JkeFR5gBoe6ljIz-8hptPOEHB0GJeKccDeEl5EvskSoUs83IC4ZIVXJ8lkZ0mq-GThDhYpw=s68-c-k-c0x00ffffff-no-rj" alt="">  
+                                </div>
+                                <div class="video-details">
+                                    <p>AI Video Clip Generator</p>
+                                    <div class="posted-by">
+                                        <span>FORMULA 1</span>
+                                        <div class="views-date">
+                                            <span>37K Views</span>
+                                            <span>.</span>
+                                            <span>1 month ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                </div>
+                <div class="video">
+                        <div class="thumbnail">
+                            <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                        </div>
+                            <div class="details">
+                                <div class="profile">
+                                <img src="https://yt3.ggpht.com/ytc/AIdro_kLcNWGhI1t0Jc0lhfBj6jpEjXcni33pFiwbEOPjbsTQek=s68-c-k-c0x00ffffff-no-rj" alt=""> 
+                                </div>
+                                <div class="video-details">
+                                    <p>AI Video Clip Generator</p>
+                                    <div class="posted-by">
+                                        <span>FORMULA 1</span>
+                                        <div class="views-date">
+                                            <span>37K Views</span>
+                                            <span>.</span>
+                                            <span>1 month ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                    
+                            
+                            </div>
+
+                </div>
+                 <div class="video">
+                    <div class="thumbnail">
+                        <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                    </div>
+                        <div class="details">
+                            <div class="profile">
+                              <img src="https://yt3.ggpht.com/VMAM-45YSgbP9OkpAg7b5V5kO3yMUuaTMoAO5HPVLR5T5vhv87Qj2N6KI91t_lYN1CpUrGX3l0w=s68-c-k-c0x00ffffff-no-rj" alt="">  
+                            </div>
+                             <div class="video-details">
+                                <p>AI Video Clip Generator</p>
+                                <div class="posted-by">
+                                    <span>FORMULA 1</span>
+                                    <div class="views-date">
+                                        <span>37K Views</span>
+                                        <span>.</span>
+                                        <span>1 month ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                </div>
+                <div class="video">
+                        <div class="thumbnail">
+                            <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                        </div>
+                            <div class="details">
+                                <div class="profile">
+                                <img src="https://yt3.ggpht.com/AZRufJDRrjbq3bX6KZrI8Rf6fr0_e2-knJVXYkegDLf_ZzGP8zi9mdPHfJ23ukxbtnCwVovSuA=s68-c-k-c0x00ffffff-no-rj" alt="">  
+                                </div>
+                                <div class="video-details">
+                                    <p>AI Video Clip Generator</p>
+                                    <div class="posted-by">
+                                        <span>FORMULA 1</span>
+                                        <div class="views-date">
+                                            <span>37K Views</span>
+                                            <span>.</span>
+                                            <span>1 month ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                </div>
+                <div class="video">
+                        <div class="thumbnail">
+                            <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                        </div>
+                            <div class="details">
+                                <div class="profile">
+                                <img src="https://yt3.ggpht.com/5f0JkeFR5gBoe6ljIz-8hptPOEHB0GJeKccDeEl5EvskSoUs83IC4ZIVXJ8lkZ0mq-GThDhYpw=s68-c-k-c0x00ffffff-no-rj" alt="">  
+                                </div>
+                                <div class="video-details">
+                                    <p>AI Video Clip Generator</p>
+                                    <div class="posted-by">
+                                        <span>FORMULA 1</span>
+                                        <div class="views-date">
+                                            <span>37K Views</span>
+                                            <span>.</span>
+                                            <span>1 month ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                </div>
+                <div class="video">
+                        <div class="thumbnail">
+                            <img src="https://lh4.googleusercontent.com/proxy/z24QjjyixI7L3stJ5gwfRSX84QUUrL2FADfm-ObC7LsDaQRTRbKilCPktNktpmOw9KLrPlaETmPbCaMN0DmWwMeGQQCj7zpExY3bgg_GozzQACjEk4siml72eXAqAd1Kg0A" alt="">
+                        </div>
+                            <div class="details">
+                                <div class="profile">
+                                <img src="https://yt3.ggpht.com/ytc/AIdro_kLcNWGhI1t0Jc0lhfBj6jpEjXcni33pFiwbEOPjbsTQek=s68-c-k-c0x00ffffff-no-rj" alt=""> 
+                                </div>
+                                <div class="video-details">
+                                    <p>AI Video Clip Generator</p>
+                                    <div class="posted-by">
+                                        <span>FORMULA 1</span>
+                                        <div class="views-date">
+                                            <span>37K Views</span>
+                                            <span>.</span>
+                                            <span>1 month ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                    
+                            
+                            </div>
+
                 </div>
 
-                <div class="button">
-                    <!--icon-->
-                    <img src="" alt="Home">
-                    Send feedback
-                </div>
-
-            </section>
-
-            <footer>
-
-
-            </footer>
-
-        </aside>
-
-        <main>
-
-            <div class="video">
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JeU_EYFH1Jk?si=YDagtMKWbxsxgmcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <section class="video info">
-
-                    <!--profile icon-->
-
-                    <section class="text">
-
-                        <h3>Artificial inteligence comes to farming in<br>India | BBC News</h3>
-                        <p>BBC News</p>
-                        <p>2.2M views • 2 years ago</p>
-
-                    </section>
-
-            </section>
-
-            </div>
-
-            <div class="video">
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JeU_EYFH1Jk?si=YDagtMKWbxsxgmcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <section class="video info">
-
-                    <!--profile icon-->
-
-                    <section class="text">
-
-                        <h3>Artificial inteligence comes to farming in<br>India | BBC News</h3>
-                        <p>BBC News</p>
-                        <p>2.2M views • 2 years ago</p>
-
-                    </section>
-
-            </section>
-
-            </div>
-
-            <div class="video">
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JeU_EYFH1Jk?si=YDagtMKWbxsxgmcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <section class="video info">
-
-                    <!--profile icon-->
-
-                    <section class="text">
-
-                        <h3>Artificial inteligence comes to farming in<br>India | BBC News</h3>
-                        <p>BBC News</p>
-                        <p>2.2M views • 2 years ago</p>
-
-                    </section>
-
-            </section>
-
-            </div>
-
-            <div class="video">
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JeU_EYFH1Jk?si=YDagtMKWbxsxgmcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <section class="video info">
-
-                    <!--profile icon-->
-
-                    <section class="text">
-
-                        <h3>Artificial inteligence comes to farming in<br>India | BBC News</h3>
-                        <p>BBC News</p>
-                        <p>2.2M views • 2 years ago</p>
-
-                    </section>
-
-            </section>
-
-            </div>
-
-            <div class="video">
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JeU_EYFH1Jk?si=YDagtMKWbxsxgmcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <section class="video info">
-
-                    <!--profile icon-->
-
-                    <section class="text">
-
-                        <h3>Artificial inteligence comes to farming in<br>India | BBC News</h3>
-                        <p>BBC News</p>
-                        <p>2.2M views • 2 years ago</p>
-
-                    </section>
-
-            </section>
-
-            </div>
-
-            <div class="video">
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JeU_EYFH1Jk?si=YDagtMKWbxsxgmcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <section class="video info">
-
-                    <!--profile icon-->
-
-                    <section class="text">
-
-                        <h3>Artificial inteligence comes to farming in<br>India | BBC News</h3>
-                        <p>BBC News</p>
-                        <p>2.2M views • 2 years ago</p>
-
-                    </section>
-
-            </section>
-
-            </div>
-
-            <div class="video">
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JeU_EYFH1Jk?si=YDagtMKWbxsxgmcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <section class="video info">
-
-                    <!--profile icon-->
-
-                    <section class="text">
-
-                        <h3>Artificial inteligence comes to farming in<br>India | BBC News</h3>
-                        <p>BBC News</p>
-                        <p>2.2M views • 2 years ago</p>
-
-                    </section>
-
-            </section>
-
-            </div>
-
-            <div class="video">
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JeU_EYFH1Jk?si=YDagtMKWbxsxgmcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <section class="video info">
-
-                    <!--profile icon-->
-
-                    <section class="text">
-
-                        <h3>Artificial inteligence comes to farming in<br>India | BBC News</h3>
-                        <p>BBC News</p>
-                        <p>2.2M views • 2 years ago</p>
-
-                    </section>
-
-            </section>
-
-            </div>
-
-            <div class="video">
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JeU_EYFH1Jk?si=YDagtMKWbxsxgmcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <section class="video info">
-
-                    <!--profile icon-->
-
-                    <section class="text">
-
-                        <h3>Artificial inteligence comes to farming in<br>India | BBC News</h3>
-                        <p>BBC News</p>
-                        <p>2.2M views • 2 years ago</p>
-
-                    </section>
-
-            </section>
-
-            </div>
-
-            <div class="video">
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JeU_EYFH1Jk?si=YDagtMKWbxsxgmcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <section class="video info">
-
-                    <!--profile icon-->
-
-                    <section class="text">
-
-                        <h3>Artificial inteligence comes to farming in<br>India | BBC News</h3>
-                        <p>BBC News</p>
-                        <p>2.2M views • 2 years ago</p>
-
-                    </section>
-
-            </section>
-
-            </div>
-
-            <div class="video">
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JeU_EYFH1Jk?si=YDagtMKWbxsxgmcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <section class="video info">
-
-                    <!--profile icon-->
-
-                    <section class="text">
-
-                        <h3>Artificial inteligence comes to farming in<br>India | BBC News</h3>
-                        <p>BBC News</p>
-                        <p>2.2M views • 2 years ago</p>
-
-                    </section>
-
-            </section>
-
-            </div>
-
-            <div class="video">
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JeU_EYFH1Jk?si=YDagtMKWbxsxgmcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <section class="video info">
-
-                    <!--profile icon-->
-
-                    <section class="text">
-
-                        <h3>Artificial inteligence comes to farming in<br>India | BBC News</h3>
-                        <p>BBC News</p>
-                        <p>2.2M views • 2 years ago</p>
-
-                    </section>
-
-            </section>
-
-            </div>
-
-            <div class="video">
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JeU_EYFH1Jk?si=YDagtMKWbxsxgmcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <section class="video info">
-
-                    <!--profile icon-->
-
-                    <section class="text">
-
-                        <h3>Artificial inteligence comes to farming in<br>India | BBC News</h3>
-                        <p>BBC News</p>
-                        <p>2.2M views • 2 years ago</p>
-
-                    </section>
-
-            </section>
-
-            </div>
-
-            <div class="video">
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JeU_EYFH1Jk?si=YDagtMKWbxsxgmcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <section class="video info">
-
-                    <!--profile icon-->
-
-                    <section class="text">
-
-                        <h3>Artificial inteligence comes to farming in<br>India | BBC News</h3>
-                        <p>BBC News</p>
-                        <p>2.2M views • 2 years ago</p>
-
-                    </section>
-
-            </section>
-
-            </div>
-
-            <div class="video">
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JeU_EYFH1Jk?si=YDagtMKWbxsxgmcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <section class="video info">
-
-                    <!--profile icon-->
-
-                    <section class="text">
-
-                        <h3>Artificial inteligence comes to farming in<br>India | BBC News</h3>
-                        <p>BBC News</p>
-                        <p>2.2M views • 2 years ago</p>
-
-                    </section>
-
-            </section>
-
-            </div>
-
-            <div class="video">
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JeU_EYFH1Jk?si=YDagtMKWbxsxgmcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <section class="video info">
-
-                    <!--profile icon-->
-
-                    <section class="text">
-
-                        <h3>Artificial inteligence comes to farming in<br>India | BBC News</h3>
-                        <p>BBC News</p>
-                        <p>2.2M views • 2 years ago</p>
-
-                    </section>
-
-            </section>
-
-            </div>
-
-            <div class="video">
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JeU_EYFH1Jk?si=YDagtMKWbxsxgmcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <section class="video info">
-
-                    <!--profile icon-->
-
-                    <section class="text">
-
-                        <h3>Artificial inteligence comes to farming in<br>India | BBC News</h3>
-                        <p>BBC News</p>
-                        <p>2.2M views • 2 years ago</p>
-
-                    </section>
-
-            </section>
-
-            </div>
-
-            <div class="video">
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JeU_EYFH1Jk?si=YDagtMKWbxsxgmcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <section class="video info">
-
-                    <!--profile icon-->
-
-                    <section class="text">
-
-                        <h3>Artificial inteligence comes to farming in<br>India | BBC News</h3>
-                        <p>BBC News</p>
-                        <p>2.2M views • 2 years ago</p>
-
-                    </section>
-
-            </section>
-
-            </div>
-
-            <div class="video">
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JeU_EYFH1Jk?si=YDagtMKWbxsxgmcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <section class="video info">
-
-                    <!--profile icon-->
-
-                    <section class="text">
-
-                        <h3>Artificial inteligence comes to farming in<br>India | BBC News</h3>
-                        <p>BBC News</p>
-                        <p>2.2M views • 2 years ago</p>
-
-                    </section>
-
-            </section>
-
-            </div>
-
-            <div class="video">
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JeU_EYFH1Jk?si=YDagtMKWbxsxgmcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <section class="video info">
-
-                    <!--profile icon-->
-
-                    <section class="text">
-
-                        <h3>Artificial inteligence comes to farming in<br>India | BBC News</h3>
-                        <p>BBC News</p>
-                        <p>2.2M views • 2 years ago</p>
-
-                    </section>
-
-            </section>
-
-            </div>
-
-        </main>
-        
-    </body>
+            
+    </div>
+</body>
 </html>

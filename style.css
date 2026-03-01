@@ -1,66 +1,243 @@
-body {
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* nav */
+body {font-family: "Roboto", sans-serif;}
 
-nav {
+/* navbar */
+
+.navbar {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 56px;
+    padding: 0 16px;
+    position: sticky;
+    top: 0;
+    background: white;
+
 }
 
-.logo {
+.navbar .logo {
     display: flex;
     align-items: center;
+    margin-left: 8px;
+}
+
+.logo img {
+    width: 100px;
+    margin-left: 10px;
+}
+
+.navbar .searchbar {
+display: flex;
+align-items: center;
+height: 32px;
+}
+
+.search {
+    display: flex;
+    border: 1px solid #cccccc;
+    width: 600px;
+    margin-right: 10px;
+    height: 100%;
+}
+
+.search input {
+    border: none;
+    width: 90%;
+    padding-left: 10px;
+}
+
+.search button {
+    border: none;
+    border-left: 1px solid #cccccc;
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.search button i {
+    margin : 0;
+}
+
+.navigation-icons {
+    display: flex;
+    align-items: center;
+}
+
+#create-btn {
+    display: flex;
+    align-items: center;
+    color: #606060;
+    cursor: pointer;
     gap: 10px;
 }
 
-.nav-icons {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.material-icons {
+    color: #606060;
+    margin-right: 10px;
 }
 
-#create {
-    display: flex;
-    align-items: center;
-    gap: 2px;
-    border-radius: 50px;
-    height: 50%;
+/* mainbody */
+
+.mainbody {
+    height: calc(100vh - 56px);
+    display: flex; 
+    overflow: hidden;
 }
 
-#sia {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-}
-
-#nhlalo {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-}
-
-.button-group {
-    border-bottom: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-aside {
+.categories {
     width: 240px;
     height: 100%;
-    float: left;
+    background: white;
+    overflow-y: scroll;
 }
 
-main {
+.category-section{
+    border-bottom: 1px solid #cccccc;
+    margin-top: 10px;
+}
+
+.category-section .category:last-child {
+    margin-top: 10px;
+}
+
+.subscriptions {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    align-items: left;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 0 24px;
+}
 
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.sub {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 24px;
+}
+
+#profile-icon {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    margin-top: 1px;
+    
+}
+
+.category_heading {
+    margin: 10px 0px 10px 25px;
+    color: #606060;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.category  {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 24px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.category:hover {background: #f9f9f9;}
+
+.active {background: #f2f2f2;}
+
+.active:hover {background: #f2f2f2;}
+
+.active i {color: red;}
+
+.category i {
+    margin-right: 24px;}
+
+.categories-footer {
+    padding: 25px;
+}
+
+.footer-section {
+    font-size: 13px;
+    font-weight: 500;
+    margin-right: 5px;
+    color: #606060;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.copyright {
+    color: #606060;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 
 
+.videos {
+    width: calc(100vw - 240px);
+    height: 100%;
+    background: #f9f9f9;
+    border-top: 1px solid #cccccc;
+    overflow-y: scroll;
+}
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.video {
+    width: calc(25% - 12px);
+    margin-right: 12px;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+
+.video .thumbnail img {
+    width: 100%;
+}
+
+.video .details {
+    display: flex;
+    margin-top: 5px;
+    width: 90%;
+}
+
+.video .profile {
+    margin-right: 12px;
+}
+
+.video .profile img {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+}
+
+.video .video-details p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.video .posted-by {
+    font-size: 10px;
+    font-weight: 500;
+    color: #606060;
+}
